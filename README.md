@@ -12,26 +12,30 @@ Make sure you have installed
 ## lets get started with 'Hello World'!
 
 * Checkout code
-> git clone https://github.com/srikanthjeeva/python-flask-getting-started.git    
-> cd python-flask-getting-started   
 
-* Install dependencies, (use sudo if required)  
->  pip install requirements.txt 
 
-or 
+       git clone https://github.com/srikanthjeeva/python-flask-getting-started.git    
+       cd python-flask-getting-started   
 
-> pip install Flask Flask-SQLAlchemy Flask-Migrate flask-marshmallow marshmallow-sqlalchemy pymysql
+* Install dependencies, (use sudo if required)    
 
-* start server 
-> python server.py  
+       pip install requirements.txt 
+           
+       or 
+          
+       pip install Flask Flask-SQLAlchemy Flask-Migrate flask-marshmallow marshmallow-sqlalchemy pymysql
+
+* start server    
+
+       python server.py  
 
 * In browser go to,
 
-> http://localhost:5000 
-
-or 
- 
-> http://localhost:5000/hello  
+       http://localhost:5000 
+            
+        or 
+                    
+       http://localhost:5000/hello  
 
 
 ## Database connection and migrations 
