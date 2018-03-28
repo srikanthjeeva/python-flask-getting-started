@@ -1,0 +1,6 @@
+Flask==0.12.2
+Flask-SQLAlchemy
+Flask-Migrate
+flask-marshmallow
+marshmallow-sqlalchemy
+pymysql
