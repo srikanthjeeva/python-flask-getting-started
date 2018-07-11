@@ -37,6 +37,9 @@ Make sure you have installed
                     
        http://localhost:5000/hello  
 
+        or for UI 
+
+       http://localhost:5000/ui/hello 
 
 ## Database connection and migrations 
 
