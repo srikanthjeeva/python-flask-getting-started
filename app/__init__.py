@@ -34,4 +34,4 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 
 # Import the models, controllers, helpers. 
-from app import models, controllers, helpers
+from app import models, controllers, helpers, templates

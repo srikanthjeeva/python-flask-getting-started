@@ -19,7 +19,7 @@ Make sure you have installed
 
 * Install dependencies, (use sudo if required)    
 
-       pip install requirements.txt 
+       pip install -r requirements.txt 
            
        or 
           

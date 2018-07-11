@@ -1,7 +1,8 @@
+from flask import render_template
 from app import app
 from app.helpers import common_helpers
 
-# I used jsonify in helper. uncomment jsonify import if needed in controllers
+# I used jsonify in helpers. uncomment below line if needed in controllers
 # from flask import jsonify
 
 @app.route('/')
@@ -15,4 +16,12 @@ def hello_world():
     # resp.status_code = 200
     # return resp
     return common_helpers.req_completed(message)
+
+
+@app.route('/')
+@app.route('/ui/hello')
+def hello_world_ui():
+    message = "Hello World from controller!"
+    return render_template('hello.html', message=message)
+
 
