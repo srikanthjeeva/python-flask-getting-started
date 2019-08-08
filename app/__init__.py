@@ -1,6 +1,6 @@
 from flask import Flask
-import logging
-from config import Config
+import logging, os
+from config import app_config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_marshmallow import Marshmallow
@@ -8,11 +8,16 @@ from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__)
 
+# export FLASK_ENV=development to run in dev mode
+# get Environment or default to devellopment
+env = os.environ.get('ENV', 'development')
+
 #This config is needed if your URL can contain trailing slash. Example: This URL will not work http://localhost:3000/users/ if the below config is set to true
 app.url_map.strict_slashes = False
 
 # passing config 
-app.config.from_object(Config)
+print(" * Loading **" + env + "** environment")
+app.config.from_object(app_config[env])
 
 # for database connection using SQLAlchemy
 db = SQLAlchemy(app)

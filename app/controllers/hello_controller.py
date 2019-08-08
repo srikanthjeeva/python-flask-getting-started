@@ -18,7 +18,6 @@ def hello_world():
     return common_helpers.req_completed(message)
 
 
-@app.route('/')
 @app.route('/ui/hello')
 def hello_world_ui():
     message = "Hello World from controller!"
