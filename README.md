@@ -41,10 +41,11 @@ Make sure you have installed
 
        http://localhost:5000/ui/hello 
 
-## Database connection and migrations 
+## Docker
 
-coming soon 
-
-## code structure explanation 
-
-Coming soon 
+```
+docker ps
+docker images
+docker build -t pygs:1.0.0 . 
+docker run -d pygs:1.0.0
+```
